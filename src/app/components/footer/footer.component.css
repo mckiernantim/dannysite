@@ -1,0 +1,28 @@
+.footer-container{
+    align-items: flex-end;
+    width: 30%; 
+    margin-left:auto;
+	display: flex; 
+	flex-direction: row; 
+	justify-content: flex-end; 
+	align-items: center; 
+    flex-wrap: wrap;
+    
+}
+.footer-title{
+    text-align: left;
+   
+    margin-left:-5%;
+
+}
+.footer-tag{
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+.footer-item{
+    max-width: 40px;
+    max-height: 40px;
+}
+.footer-bar{
+    padding:0% 5%
+}

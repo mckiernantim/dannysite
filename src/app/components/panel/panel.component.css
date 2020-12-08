@@ -1,0 +1,8 @@
+.panel-container{
+    display: inline-block;
+    place-items: center;
+    height:100%;
+    text-align: center;
+    border:2px solid purple
+    
+}
