@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DannyYoerges"
+    }
+  },
+  "defaultProject": "DannyYoerges",
+  "cli": {
+    "analytics": "5425a78f-abaa-4feb-bc37-9e1a65df73ac"
+  }
 }
