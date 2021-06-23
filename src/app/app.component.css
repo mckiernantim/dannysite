@@ -1,0 +1,9 @@
+.entire-app{
+    padding:0 5%
+}
+
+@media (min-width:764px) and (max-width:1024px){
+    .entire-app{
+        padding:0 1% 
+    }
+}

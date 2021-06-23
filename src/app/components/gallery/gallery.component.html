@@ -1,0 +1,12 @@
+<div class="gallery-container">
+  <div *ngFor="let pic of pics; let i = index" class="thumb-container {{pic.color}}"> 
+      <img  id={{i}} class="thumbnail" src="{{pic.path}}"
+    (click)="showGallery($event.target.id)">
+      <a href="{{pic.path}}" class ="download-button"  download>
+        <mat-icon style="float:right" aria-hidden="false" 
+        aria-label="Example get_app icon">get_app</mat-icon>
+      </a>
+ 
+ 
+  </div>
+ </div>

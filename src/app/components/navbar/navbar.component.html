@@ -1,0 +1,29 @@
+<mat-toolbar class="mobile-menu">
+  <div class="one-hundred"> 
+    <button mat-button mat-icon-a class="example-icon" [matMenuTriggerFor]="menu" class="menu-button">
+      <mat-icon>reorder</mat-icon>
+    </button>
+    <span class="home-link">
+      <a class="nav-title" routerLink="">Danny Yoerges</a>
+    </span>
+    <mat-menu #menu="matMenu">
+      <ul class="menu-list" *ngFor="let link of links">
+        <a routerLink={{link.text}} [routerLinkActive]="['active']" style=border-color:{{link.color}}>{{link.text}}</a>
+      </ul>
+
+    </mat-menu>
+  </div>
+</mat-toolbar>
+<div class="nav-container reveal12 fadeIn delay8">
+
+  <span>
+    <a class="nav-title" routerLink="">Danny Yoerges</a>
+  </span>
+  <ul class="navbar" *ngFor="let link of links">
+    <a routerLink={{link.text}} [routerLinkActive]="['active']" style=border-color:{{link.color}}>{{link.text}}</a>
+  </ul>
+
+</div>
+<div class="nav-tag reveal12 fadeIn delay8">
+  <h4 style="margin:0">Actor. AEA</h4>
+</div>

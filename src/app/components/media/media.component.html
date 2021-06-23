@@ -1,0 +1,129 @@
+<div class="component-wrapper delay14 fadeIn">
+  <app-header-image style="z-index:10" [styleObj]='{
+  
+    imageIndex:1, 
+    titleText:"Media", 
+    color:"#4990e0", 
+    xOffset:"100%", 
+    yOffset:"0%"
+  
+  }'></app-header-image>
+<div class="button-container">
+  <div class="media-buttons">
+    <div class="button-container">
+      <a  #video id = 0 class="toggle" (click)="toggleMode($event.target.id, $event.target)" >Vids</a>
+    </div>
+    <div class="button-container hidden">
+      <a  #pics class="toggle" id = 1  class="toggle" (click)="toggleMode($event.target.id, $event.target)">Pics</a>
+    </div>
+    <div class="button-container">
+      <a  #heads class="toggle selected" id = 2  class="toggle" (click)="toggleMode($event.target.id, $event.target)">Pics</a>
+    </div>
+
+  </div>
+</div>
+<div *ngIf="mode === modes[0]">
+  <div class="elfsight-app-ad34fbca-0967-4d43-9dba-7b05279659b7"></div>
+
+  <!-- <div class="no-gap fadeIn fade4 delay4">
+    <div class="purple two-column short container vid-container ">
+      <div class="block  blurb">
+        <h3>This is danny in his element.  I make cookies and Old Fashioneds. </h3>
+      </div>
+     <div class="block vid-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hyZKzFJSdE0" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </div>
+    <div class="orange two-column short container vid-container ">
+       <div class="block vid-wrapper">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/FpHJU8xEomc" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="block  blurb">
+        <h3>This is my Reel  </h3>
+      </div>
+   
+    </div>
+    <div class="blue two-column short container vid-container ">
+     
+      <div class="block  blurb">
+        <h3>Showcase #1 - This Is Us </h3>
+      </div>
+      <div class="block vid-wrapper">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/kjrD5mtDcJA" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    
+    </div>
+    <div class="blue two-column short container vid-container "> -->
+  
+<!--      
+      <div class="block vid-wrapper">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/xSgMdty91oI" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+      <div class="block  blurb">
+
+        <h3>Showcase Scene Mary Page Marlowe Marlene</h3>
+      </div>
+    </div>
+    <div class="green two-column short container vid-container">
+      <div class="block  blurb">
+
+        <h3>I filmed a co-star spot for AMC’s Turn on location in Richmond, VA. I got to speak in a an earlier
+          British-American Dialect, fire a musket, and clobber Jamie Bell with the butt of my rifle! </h3>
+      </div>
+
+      <div class="block vid-wrapper">
+        <iframe src="https://player.vimeo.com/video/488726306" width="640" height="400" frameborder="0"
+          allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="purple two-column short container vid-container">
+      <div class="block vid-wrapper">
+        <iframe src="https://player.vimeo.com/video/317841369" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+
+      <div class="block blurb ">
+        <h1> </h1>
+        <h3> My wife Rachel Rizzuto makes an anti-Valentine’s day show every year called Love Sucks.
+          I’ve been in it four years running. This past year I wrote and directed eight scenes (found throughout).
+          You’ll also catch me dancing (7:31), acting (24:03, 30:28),
+          playing the sax (28:45), and busting out my best Michael McDonald (42:31). </h3>
+      </div>
+    </div>
+    <div class="orange two-column short container vid-container">
+      <div class="block blurb ">
+        <h1> </h1>
+        <h3>When War Horse played the Kennedy Center in my home town of Washington DC, I got to speak with the lovely
+          Jeffrey Brown on PBS News Hour’s Art Beat. </h3>
+      </div>
+      <div class="block vid-wrapper">
+        <iframe src="https://player.pbs.org/viralplayer/2302386822/" allowfullscreen width="640" height="400"
+          frameborder="0" allow="autoplay; fullscreen"></iframe>
+      </div>
+    </div>
+  </div> -->
+</div>
+<div *ngIf="mode === modes[1]">
+<app-pics></app-pics>
+</div>
+<div *ngIf="mode === modes[2]">
+ <app-headshots></app-headshots>
+</div>
+</div>

@@ -1,1 +1,224 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@keyframes slideRight {
+    0% {
+      transform: translateX(0%)
+    }
+    100% {
+      transform: translateX(4%)
+    }
+  }
+  @keyframes slideLeft {
+
+        0% {
+          transform: translateX(0%)
+        }
+        100% {
+          transform: translateX(-4%)
+        }
+      
+  }
+  .carousel-cell img{
+    object-fit: contain !important;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: .1
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
+  .active{
+    color:#f5a623
+  }
+  
+ 
+  .hidden{
+    display: none;
+  }
+  .panel{
+    opacity:.01
+  }
+  .slideRight{
+    animation: slideRight  ease-out;
+    animation-fill-mode: forwards;
+
+  }
+  .slideLeft{
+    animation: slideLeft  ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: .9s;
+    
+
+  }
+  .delay8{
+    animation-delay: .8s !important
+  }
+  .delay10{
+    animation-delay: 1s !important
+  }
+  .delay12{
+    animation-delay: 1.2s !important
+  }
+  .delay14{
+    animation-delay: 1.4s !important
+  }
+  .fadeIn{
+    animation: fadeIn 1.0s 1  ease-in;
+    animation-fill-mode: forwards;
+    opacity:0.01
+  }
+  .fade6{
+    animation-duration: .8s !important 
+  }
+  .fade8{
+    animation-duration: .6s !important;
+  }
+  .grid{
+    display:grid
+  }
+  .underline{
+    border-bottom:1px solid;
+  }
+  .no-margin-bottom{
+    margin-bottom:0;
+  }
+html, body {
+    min-height: 90vh;
+    height: auto;
+    margin: 0; 
+    font-family: Avenir;
+    font-weight: 500;
+  }
+  .italic{
+    font-style: italic;
+  }
+  .forty{
+    margin-right:40%
+  }
+  .one-hundred{
+    width:100%
+  }
+  .height-40{
+    min-height:40vh !important
+  }
+.construction{
+    border:3px dotted orange
+}
+.orange{
+    background: linear-gradient(to bottom, #f5a623 25%, #f0c275 98%);
+}
+.blue{
+    background:linear-gradient(to bottom, #4a90e2, #7fabde 99%);
+}
+.green{
+    background: linear-gradient(to bottom, #7ed321, #a1ca74);
+}
+.purple{
+    background: linear-gradient(to bottom, #c84ce1 14%, #d587e4);
+}
+.main-button{
+
+  width: 60%;
+  height: 25%;
+  margin: 74px 103px 63px 124px;
+  padding: 23px 55px;
+  border-radius: 100px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-around;
+  text-align: center;
+  border-bottom: 0px;
+  
+  
+}
+a{
+   color: black;
+   font-weight:bold; 
+   font-size: 1.5em;
+   text-decoration: none;
+  
+}
+.mat
+.download-link{
+  font-size:1.4em;
+  float:right
+}
+.mat-dialog-container{
+background:none;
+box-shadow:none
+}
+.short{
+    min-height:none !important;
+    padding:0 2%;
+}
+.container{
+    height:auto;
+
+    align-content: center;
+    width:auto;
+    justify-items: center;
+    display:grid;
+    grid-template-columns: 1fr;
+    
+       
+    }
+    .black{
+      background-color:black;
+    }
+    .block{
+        display: inline-block;
+        padding:2.5%;
+        align-items: center;
+       }
+    .text{
+        font-size:2em
+    }
+    .fixed{
+        position: absolute;
+    }
+    .italic{
+      font-style: italic;
+    }
+    .one-column{
+      grid-template-columns: 1fr;
+    }
+    .two-column{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .thumbnail:hover{
+        opacity:.8
+    }
+    .no-center{
+        align-content:normal
+    }
+    .center{
+        align-self:center
+    }
+    .grid{
+      display: grid;
+    }
+    .mat-dialog-container {
+      padding:2% !important;
+      overflow:hidden !important;
+
+    }
+    
+    @media (max-width:1024px){
+      .component-wrapper{
+        margin-top:5%
+      }
+    }
+    @media (max-width:761px){
+      .two-column{
+        grid-template-columns: 1fr;
+      }
+      p{
+        font-size: 15px;
+      }
+    }

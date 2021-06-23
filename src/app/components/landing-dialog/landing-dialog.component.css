@@ -1,0 +1,25 @@
+.modal{
+    height:75vh; 
+    width:50vw
+}
+.modal-inner{
+    width: 65vw;
+    height: auto;
+    margin: 0 auto
+}
+.modal-outer{
+    max-height: 75vh;
+    text-align: center;
+    width: 75vw;
+    min-width:75vw
+}
+.resume-modal{
+    
+    opacity:1;
+    height:70vh
+}
+.vimeo{
+    padding:56.25% 0 0 0;
+    position:relative;
+    width:100%
+}

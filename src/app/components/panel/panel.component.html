@@ -1,0 +1,12 @@
+<div class="panel-container" style="background-image:url({{ path }});
+    background-position-x:{{ xPos }};
+    background-position-y:{{ offset }}; 
+    background-size:{{ size }}" id="panel{{ id }}"
+>
+  <div class="overlay" style="background-color:{{ color }}  .3);border:15px solid {{ color }} .9);">
+    <!-- color has an added opacity to deal with the overlay div. -->
+    <h1 class="label visible" style="background-color:{{ color }} .9)">
+      <a (click)="openDialog($event.target.id)" id={{label}}>{{ label }}</a>
+    </h1>
+  </div>
+</div>

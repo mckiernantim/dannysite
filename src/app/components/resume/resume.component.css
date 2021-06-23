@@ -1,0 +1,92 @@
+
+.top-40{
+    margin-top: 5%;
+
+}
+.grid{
+    grid-gap:7%
+}
+.italic{
+    font-weight: 100;
+    width: 75%;
+    margin: 0 auto;
+}
+a, h1, h2,h3,h4,h5{
+    text-align: center;
+    color:black;
+    border-bottom: none;
+}
+.center{
+    margin: 0 auto;
+    
+}
+.contact-card{
+    background-color:green;
+    padding:10%
+
+}
+.card-body{
+    color:black;
+    padding:5%;
+    background-color:white
+}
+.main-button{
+    margin: 0 0 0 0;
+    width:40%
+}
+.margin-top{
+    margin-top:1%
+}
+.pic-background{
+   background-image: url('../../../assets/Headshots/legitS.jpg');
+    background-size: 130%;
+    /* height: 85vh; */
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+}
+.black-bg{
+    
+    min-height:70vh;
+    width:100%;
+    background: linear-gradient(
+261deg
+, #171614, #1a1615);
+}
+.half{
+    margin-left:45%;
+    padding:7%
+}
+.lb-background{
+    background-image: url("../../../assets/images/LB.jpeg");
+    height:200px;
+    width:200px;
+
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.warhorse{
+    background-image:url('../../../assets/images/Website/About/mobile.jpg')
+}
+.height-70{
+    min-height:70vh;
+    margin: top 20%;
+    align-items:center
+}
+
+@media (max-width:761px){
+    .pic-background{
+  
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+    height:30vh
+    }
+}
+@media (min-width:728px) and (max-width:1025px) and (min-height:1024px){
+    .margin-top{
+        margin-top:50%
+    }
+    .top-40{
+        margin-top:0;
+    }
+}
