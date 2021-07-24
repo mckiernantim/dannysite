@@ -1,5 +1,6 @@
 .nav-container{
     width: 100%; 
+    max-width:1400px;
 	display: flex; 
 	flex-direction: row; 
 	justify-content: space-evenly; 
@@ -14,9 +15,11 @@
 
 }
 .nav-tag{
-    margin-bottom: 0;
-    padding-bottom:0;
-    border-bottom:1px solid #4991de
+    margin-bottom: 5px;
+    padding-bottom:5px;
+    border-bottom:1px solid #4991de;
+    max-width:1400px;
+    margin:0 auto;
 }
 
 .burger-wrapper{

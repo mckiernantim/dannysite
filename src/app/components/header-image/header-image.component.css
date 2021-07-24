@@ -2,16 +2,19 @@
     width:100%
 }
 .header-container{
-    width:100%
+    width:100%;
+    max-width:1400px;
+    margin: 0 auto
 }
 .banner-image{
-    height:auto;
-    min-height:30vh;
-    max-height:55vh;
-    width:100%;
-    background-size:100%;
-    background-repeat:no-repeat;
-    padding:5% 2%
+
+    min-height: 27vh;
+    max-height: 55vh;
+    width: 100%;
+    margin:0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2% 0%;
 }
 /* capitalized only to match string passed to component */
 .Media{
@@ -29,11 +32,11 @@
     background-image:url('../../../assets/images/Website/Teaching/withText/teachingDesktop.jpg')
 }
 .title-container{
-
     margin: 0 auto;
     display: flex;
     align-content: space-around;
-height: 90%;
+    height: 90%;
+
 
 }
 
@@ -61,7 +64,35 @@ h1{
         font-size: 2.5em;
     }
     .banner-image{
-        height:9vh
+        height:8vh;
+        min-height:0;
+        background-size: 100%;
+        border-bottom:4px solid;
+    }
+   
+    .Media{
+        background-image:url('../../../assets/images/Website/Media/withText/mediaPhone.jpg')
+    }
+    .About{
+        background-image:url('../../../assets/images/Website/About/withText/aboutPhone.jpg')
+    }
+    /* Contact  */
+    .Resume{
+        background-image:url('../../../assets/images/Website/Resume_CV/withText/resumePhone.jpg')
+    
+    }
+    .Teaching{
+        background-image:url('../../../assets/images/Website/Teaching/withText/teachingPhone.jpg')
     }
     
 }
+@media (min-width:762px){
+
+}
+
+@media only screen and (min-width:1000px){
+    .banner-image{
+      background-size:100%;
+      padding: 5% 0%;
+    }
+  }

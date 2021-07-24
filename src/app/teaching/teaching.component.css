@@ -33,6 +33,7 @@
     width:80%
 
 }
+
 .bold{
     font-size: 1.7em;
     font-weight: bold;
@@ -45,6 +46,7 @@
     color:white;
     border-radius: 100px;
     margin-bottom: 2%;
+    padding:5%;
 }
 p{
     margin-left: 8%;

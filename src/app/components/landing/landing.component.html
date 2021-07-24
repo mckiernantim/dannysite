@@ -1,22 +1,27 @@
-<div class="main-container  " [ngClass]=styling>
-  <div class="panel-container fadeIn panel delay8 fade6">
-    <app-panel class="slideRight fadeIn panel delay8 fade6" id="1" style="width:100%; height:100%" [label]="labels[0]"
-      [color]='colors[0]' [offset]=offset[0] [link]=links[0] [path]=images[0] [id]=1 [size]=size[0] [xPos]="xPos[0]">
-    </app-panel>
+<section class="section-body">
+  <div class="main-container  " [ngClass]=styling>
+    <div class="panel-container fadeIn panel delay8 fade6">
+      <app-panel class="slideRight fadeIn panel delay8 fade6" id="1" style="width:100%; height:100%" [label]="labels[0]"
+        [color]='colors[0]' [offset]=offset[0] [link]=links[0] [path]=images[0] [id]=1 [size]=size[0] [xPos]="xPos[0]"
+        [align]="'flex-end'">
+      </app-panel>
+    </div>
+    <div class="panel-container fadeIn panel delay10 fade6">
+      <!-- need to add functionality that disables the modal on mobiles and replaces with _blank rediret -->
+      <app-panel class="slideLeft fadeIn panel delay8 fade6" style="width:100%; height:100%" [label]="labels[1]"
+        [color]='colors[1]' [offset]=offset[1] [link]=links[1] [path]=images[1] [id]=2 [align]="'flex-end'">
+      </app-panel>
+    </div>
+    <div class="panel-container fadeIn panel delay12 fade6">
+      <app-panel class="slideRight fadeIn panel delay10 fade8" id="3" style="width:100%; height:100%"
+        [label]="labels[2]" [color]='colors[2]' [offset]=offset[2] [link]=links[2] [path]=images[2] [id]=3
+        [align]="'flex-start'"></app-panel>
+    </div>
+    <div class="panel-container fadeIn panel delay14 fade6">
+      <app-panel class="slideLeft fadeIn panel delay12 fade8" id="4" style="width:100%; height:100%;"
+        [label]="labels[3]" [color]='colors[3]' [offset]=offset[3] [link]=links[3] [path]=images[3] [special]=panel4
+        [id]=4 [align]="'flex-start'">
+      </app-panel>
+    </div>
   </div>
-  <div class="panel-container fadeIn panel delay10 fade6">
-    <!-- need to add functionality that disables the modal on mobiles and replaces with _blank rediret -->
-    <app-panel class="slideLeft fadeIn panel delay8 fade6" style="width:100%; height:100%" [label]="labels[1]"
-      [color]='colors[1]' [offset]=offset[1] [link]=links[1] [path]=images[1]  [id]=2> 
-    </app-panel>
-  </div>
-  <div class="panel-container fadeIn panel delay12 fade6">
-    <app-panel class="slideRight fadeIn panel delay10 fade8" id= "3" style="width:100%; height:100%" [label]="labels[2]"
-      [color]='colors[2]' [offset]=offset[2] [link]=links[2] [path]=images[2]  [id]=3></app-panel>
-  </div>
-  <div class="panel-container fadeIn panel delay14 fade6">
-    <app-panel class="slideLeft fadeIn panel delay12 fade8" id="4" style="width:100%; height:100%;" [label]="labels[3]"
-      [color]='colors[3]' [offset]=offset[3] [link]=links[3] [path]=images[3] [special]=panel4  [id]=4>
-    </app-panel>
-  </div>
-</div>
+</section>

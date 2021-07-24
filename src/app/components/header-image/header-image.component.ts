@@ -6,7 +6,8 @@ interface stylesObj {
   titleText:string,
   color:string,
   xOffset:string,
-  yOffset:string
+  yOffset:string,
+  
 }
 @Component({
   selector: 'app-header-image',

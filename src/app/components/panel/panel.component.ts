@@ -18,6 +18,7 @@ export class PanelComponent implements OnInit {
 @Input()id:string
 @Input()size:string
 @Input()xPos:string
+@Input()align:string
   constructor( public dialog:MatDialog) { }
   
   ngOnInit(): void {

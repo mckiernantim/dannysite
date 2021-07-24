@@ -1,37 +1,48 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @keyframes slideRight {
-    0% {
-      transform: translateX(0%)
+	0% {
+		transform: translateX(0%)
     }
     100% {
-      transform: translateX(4%)
+		transform: translateX(4%)
     }
-  }
-  @keyframes slideLeft {
-
-        0% {
-          transform: translateX(0%)
-        }
-        100% {
-          transform: translateX(-4%)
-        }
-      
-  }
-  .carousel-cell img{
-    object-fit: contain !important;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: .1
+}
+@keyframes slideLeft {
+	
+	0% {
+		transform: translateX(0%)
+	}
+	100% {
+		transform: translateX(-4%)
+	}
+	
+}
+.carousel-cell img{
+	object-fit: contain !important;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: .1
     }
     100% {
-      opacity: 1
+		opacity: 1
     }
-  }
+}
 
-  .active{
-    color:#f5a623
+a{
+   color: black;
+   font-weight:bold; 
+   font-size: 1.5em;
+   text-decoration: none;
+  
+}
+li{
+	list-style-type: none;
+}
+
+.active{
+	color:#f5a623
   }
   
  
@@ -79,6 +90,9 @@
   .grid{
     display:grid
   }
+  .construction{
+	  border:2px solid yellow;
+  }
   .underline{
     border-bottom:1px solid;
   }
@@ -119,12 +133,14 @@ html, body {
 .purple{
     background: linear-gradient(to bottom, #c84ce1 14%, #d587e4);
 }
+.width-50{
+  width:50%
+}
 .main-button{
-
-  width: 60%;
+  margin: 0 auto;
+  width: auto;
   height: 25%;
-  margin: 74px 103px 63px 124px;
-  padding: 23px 55px;
+  padding: 5% 5%;
   border-radius: 100px;
   background-color: green;
   display: flex;
@@ -134,14 +150,10 @@ html, body {
   text-align: center;
   border-bottom: 0px;
   
-  
+
 }
-a{
-   color: black;
-   font-weight:bold; 
-   font-size: 1.5em;
-   text-decoration: none;
-  
+.flex{
+  display:flex
 }
 .mat
 .download-link{
@@ -178,6 +190,7 @@ box-shadow:none
     .text{
         font-size:2em
     }
+ 
     .fixed{
         position: absolute;
     }
@@ -190,6 +203,10 @@ box-shadow:none
     .two-column{
         grid-template-columns: 1fr 1fr;
     }
+	.section-body{
+		max-width: 1200px;
+		margin:0 auto;
+	}
     
     .thumbnail:hover{
         opacity:.8

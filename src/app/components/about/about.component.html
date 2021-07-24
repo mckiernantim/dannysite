@@ -1,5 +1,5 @@
 <div class="container fadeIn delay8">
-<app-header-image style="z-index:10" [styleObj]='{
+  <app-header-image style="z-index:10" [styleObj]='{
   
   imageIndex:0, 
   titleText:"About", 
@@ -8,65 +8,40 @@
   yOffset:"0%"
 
 }'></app-header-image>
-  <div class="small-image">
-
-  </div>
-<div class="no-center ">
-  <div class="block main-image center">
-
-  </div>
-  <div class="block center">
-    <div class="text">
-      <div class="forty top-text">
-        <h1 class="text-large headline">
-          In the seventh grade I sang the entirety of “Kids”
-          (What’s the matter with kids today?)—downstage center—with an open fly.
-        </h1>
+  <section class="section-body">
+    <div class="about-body">
+      <div class='text-box flex row gird-one'>
+        <h2>
+         {{text[0]}}
+        </h2>
+      </div>
+      <div class="flex row grid-two ">
+       <h3>
+        {{text[1]}}
+      </h3> 
+      </div>
+      <div class="flex row grid-three">
+        
+      </div>
+      <div class="flex row grid-four ">
+        <ul>
+          <li *ngFor="let item of list">{{item}}</li>
+        </ul>
+      </div>
+      <div class='text-box flex row grid-five'>
+        <h3>
+         {{text[2]}} contact me <a mailto="dannyYoerges@gmail.com">here</a>
+        </h3>
       </div>
     </div>
-  </div>
-</div>
-<div class="left height-40  small-panel" >
-  <div class="medium-text">
-  <p class="small-text">
-    <span style="font-size:42px">M</span>y Grandpa never let me live it down.
-  </p>
-  <p class="small-text">
-    But dammit, I got over it and kept at this theatre thing.
-    <br>
-    I’ve gotten better at a few things, but I’ve sure mastered the double-check.
-  </p>
-</div>
-  <div class="grid one-hundred">
-    <ul class="about-list">
-
-      <li>Where I’m from: </li>
-      <span class="answer">Alexandria, VA</span>
-      <li>Where I went to school:</li>
-      <span class="answer">North Carolina School of the Arts (BFA),
-      </span>
-      <br>
-      <span class="answer">
-        University of Illinois at Urbana-Champaign (MFA)</span>
-      <li>My favorite movie: </li><span class="answer">Jurassic Park</span>
-      <li>My favorite play: </li> <span class="answer">Jurassic Park (still waiting)</span>
-      <li>Cat’s name: </li>
-      <span class="answer">Karen From Accounting</span>
-    </ul>
-    <!-- <div class="grid two-column">
-      <div class="big-grid-img" style="background-image: url(../../../assets/Headshots/IMG_9757.jpeg);">
-        1
-      </div>
-      <div>
-        <div class="small-grid-img" style="background-image: url(../../../assets/images/babies.jpg);">2</div>
-        <div class="small-grid-img" style="background-image: url(../../../assets/images/drunks.jpg);">2</div>
-
-      </div>
-    </div> -->
-  </div>
-</div>
-</div>
-<!-- <div *ngFor="let image of images ; let i = index" class="block container one-column image {{image.color}}">
-  <img src={{image.path}} class="about-image">
-
-</div> -->
+    <div class="flex row video-container">
+      <iframe width="560" 
+    height="315" src="https://www.youtube.com/embed/hyZKzFJSdE0" 
+    title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; 
+     gyroscope; picture-in-picture" 
+     allowfullscreen></iframe>
+    </div>
+  </section>
+        

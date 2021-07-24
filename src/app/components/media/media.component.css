@@ -10,6 +10,17 @@
 .container{
     min-height: 50vh;
 }
+.elf-sight-container{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+.eavg-root-layout-component, .eavg-root-layout-component * {
+    margin:0 auto !important
+}
 .block{
     display: flex;
     padding: 2.5%;

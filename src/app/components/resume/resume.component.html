@@ -1,44 +1,107 @@
-<div class="container fadeIn delay12 ">
-  <app-header-image [styleObj]='{
- 
-    titleText:"Resume"
- }'
-  ></app-header-image>
-  <div class="black-background">
-    <div class="grid  two-column height-70">
-      <div class="top-40 contact-card purple">
-        <div class="card-body">
-          <h2 class="italic border-bottom">For professional bookings email Mark Whatever at LB Talent (LA)</h2>
-            <div class="block grid two-column card-body">
-              <div class="center grid two-column">
-                <div class="main-button purple">
-                  <a>email Mark</a>
+
+  <div class="container fadeIn delay12 ">
+    <app-header-image [styleObj]='{titleText:"Resume"}'></app-header-image>
+    <section class="section-body">
+      <div class=" grid three-column">
+        <div class="flex top-40 contact-card">
+          <div class="card-body flex column">
+            <div class="pic-container card-grid-cell row">
+              <div>
+                <img class="download-pic" src='{{images.resumeDesktop}}'>
+                <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
+                </a>
+              </div>
+            </div>
+            <div class="block card-content flex center row">
+              <div class="center card-grid-cell row">
+                <div class="main-button blue">
+                  <a>Resume</a>
                 </div>
-               </div>
-              <div class="center">
-                <div class="lb-background warhorse"><a href="https://www.facebook.com/LBTalent/"
-                    style="height:100px;width:100px"></a></div>
               </div>
             </div>
           </div>
         </div>
-      <div class="top-40 contact-card green">
-      <div class="card-body">
-        <h2 class="italic border-bottom">For all other inquiries you can email me with this magic button</h2>
-          <div class="block grid two-column card-body">
-            <div class="center grid two-column">
-              <div class="main-button green">
-                <a>email Mark</a>
+        <div class="flex top-40 contact-card">
+          <div class="card-body flex column">
+            <div class="pic-container card-grid-cell row">
+              <div>
+                <img class="download-pic" src='{{images.cvDesktop}}'>
+                <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
+                </a>
               </div>
             </div>
-            <div class="center">
-              <div class="lb-background"><a href="https://www.facebook.com/LBTalent/"
-                  style="height:100px;width:100px"></a></div>
+
+            <div class="block card-content flex center row">
+              <div class="center card-grid-cell">
+                <div class="main-button blue">
+                  <a>CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex top-40 contact-card">
+          <div class="card-body flex column">
+            <div>
+              <img class="download-pic" src='{{images.headshotsDesktop}}'>
+              <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
+              </a>
+            </div>
+
+            <div class="block card-content flex center row">
+              <div class="center card-grid-cell">
+                <div class="main-button blue">
+                  <a>Headshots</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-    </div>
-  </div>
-</div>
+      <div class="black-background">
+        <div class="grid  two-column height-5s0">
+          <div class="top-40 contact-card purple">
+            <div class="card-body flex column">
+              <div class="card-header">
+                <h2 class="italic border-bottom">For all other inquiries you can email me with this magic button</h2>
+              </div>
+              <div class="block card-content center row">
+                <div class="center card-grid-cell">
+                  <div class="main-button purple">
+                    <a>email me</a>
+                  </div>
+                </div>
+                <div class="pic-container warhorse lb-background  card-grid-cell">
+                  <div style="background-image:url('{{images.resumeDesktop}}');">
+                    <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
+                    </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-40 contact-card green">
+            <div class="card-body flex column">
+              <div class="card-header">
+                <h2 class="italic border-bottom">For all professional bookings contact Mark at LB Talent </h2>
+                <br>
+              </div>
+              <div class="block card-content center row">
+                <div class="center card-grid-cell">
+                  <div class="main-button green">
+                    <a>email Mark</a>
+                  </div>
+                </div>
+                <div class="pic-container lb-background  card-grid-cell">
+                  <div style="background-image:url('{{images.resumeDesktop}}');">
+                    <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
+                    </a></div>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>

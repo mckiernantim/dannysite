@@ -1,4 +1,6 @@
-
+ul{
+    padding:0;
+}
 .main-image{
     background-image:url('../../../assets/about/WarHorse.jpg');
     background-repeat: no-repeat;
@@ -6,13 +8,61 @@
     width: 70%;
     height: 64%;
     /* max-height: 70%; */
-    background-position-x: 100%;
-    position: absolute;
+
     z-index: 1;
-    top: 42%;
-    left: 12%;
+    display:flex;
 
 }
+.about-body{
+    display:grid;
+    grid-template-areas: 
+    "a a a a a a "
+    "b b b c c c"
+    "d d . c c c"
+    "e e e e e e";
+    min-height:50vh;
+    padding:5%
+   }
+
+.gird-one{
+    grid-area:a;
+    height:auto
+}
+.grid-two{
+    grid-area:b;
+    min-height:10vh;
+    height:auto
+}
+.grid-three{
+
+    grid-area:c;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    min-height:30vh;
+    background-image:url("../../../assets/images/Website/About/ComicDesktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:500px
+
+}
+.video-container{
+    justify-content: center;
+    margin:0% 5% 5% 0%
+}
+.grid-four{
+    grid-area:d;
+    min-height:10vh;
+    height:auto
+}
+.grid-five{
+    grid-area:e;
+    min-height:10vh;
+    height:auto
+}
+
 .secret-ear-blocker-div{
     position:relative;
     width:5%;
@@ -87,10 +137,7 @@ li{
         width: 70%;
         max-height: 70%;
         background-position-x: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 33%;
-        left: 27%;
+    
     }
     .text{
         font-size: 2em;
