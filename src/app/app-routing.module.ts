@@ -14,7 +14,8 @@ const routes: Routes = [
   {path: "About Me", component:AboutComponent, data:{animation: "other"}},
   {path: "Media", component:MediaComponent, data:{animation: "other"}},
   {path: "Contact", component:ResumeComponent, data:{animation: "other"}},
-  {path: "Teaching", component:TeachingComponent, data:{animation: "other"}}
+  {path: "Teaching", component:TeachingComponent, data:{animation: "other"}},
+  {path:"**", component:LandingComponent, data:{animation:"other"}}
 ];
 
 @NgModule({

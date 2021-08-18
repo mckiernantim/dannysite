@@ -4,7 +4,8 @@
 .header-container{
     width:100%;
     max-width:1400px;
-    margin: 0 auto
+    margin: 0 auto;
+    height:40vh
 }
 .banner-image{
 
@@ -18,18 +19,18 @@
 }
 /* capitalized only to match string passed to component */
 .Media{
-    background-image:url('../../../assets/images/Website/Media/withText/mediaDesktop.jpg')
+    background-image:url('../../../assets/images/mediaDesktop.jpg')
 }
 .About{
-    background-image:url('../../../assets/images/Website/About/withText/aboutDesktop.jpg')
+    background-image:url('../../../assets/images/aboutDesktop.jpg')
 }
 /* Contact  */
 .Resume{
-    background-image:url('../../../assets/images/Website/Resume_CV/withText/resumeDesktop.jpg')
+    background-image:url('../../../assets/images/resumeDesktop.jpg')
 
 }
 .Teaching{
-    background-image:url('../../../assets/images/Website/Teaching/withText/teachingDesktop.jpg')
+    background-image:url('../../../assets/images/teachingDesktop.jpg')
 }
 .title-container{
     margin: 0 auto;
@@ -64,35 +65,41 @@ h1{
         font-size: 2.5em;
     }
     .banner-image{
-        height:8vh;
+        height:10vh;
         min-height:0;
-        background-size: 100%;
-        border-bottom:4px solid;
+       
     }
-   
     .Media{
-        background-image:url('../../../assets/images/Website/Media/withText/mediaPhone.jpg')
+        background-image:url('../../../assets/images/mediaMobile.jpg')
     }
     .About{
-        background-image:url('../../../assets/images/Website/About/withText/aboutPhone.jpg')
+        background-image:url('../../../assets/images/aboutMobile.jpg')
     }
     /* Contact  */
     .Resume{
-        background-image:url('../../../assets/images/Website/Resume_CV/withText/resumePhone.jpg')
+        background-image:url('../../../assets/images/resumeMobile.jpg')
     
     }
     .Teaching{
-        background-image:url('../../../assets/images/Website/Teaching/withText/teachingPhone.jpg')
+        background-image:url('../../../assets/images/teachingMobile.jpg')
     }
     
 }
-@media (min-width:762px){
-
+@media (min-width:300px) and (max-width:761px){
+    .header-container{
+        height:15vh !important;
+    }
 }
-
+@media (min-width:767px) and (max-width:1024px){
+    .header-container{
+        height:20vh !important
+    }
+}
 @media only screen and (min-width:1000px){
     .banner-image{
       background-size:100%;
       padding: 5% 0%;
+    }.header-container{
+        height:40vh
     }
   }

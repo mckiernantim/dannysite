@@ -5,6 +5,9 @@
     height:auto;
     min-height:80vh;
     grid-template-columns: 1fr 1fr;
+    margin-top:50px
+   
+    
  
 }
 .panel-container{
@@ -23,15 +26,26 @@
         min-height: 1px;
         align-content: center;
         grid-template-columns: 1fr;
-    }
+        margin-bottom: 5%;
+}
 }
 @media  (min-width:767px) and (max-width:1024px){
    .main-container{
         height:auto;
         min-height: 1px;
         align-content: center;
+        grid-gap: 0px
     }
     #3{
         background-position-x: 52%;
+    }
+}
+@media(max-width:761px){
+    .main-container{
+        grid-gap:0px;
+    }
+    .modal-outer{
+        display:flex;
+        align-items: center;
     }
 }

@@ -7,6 +7,7 @@ interface stylesObj {
   color:string,
   xOffset:string,
   yOffset:string,
+  height:string;
   
 }
 @Component({

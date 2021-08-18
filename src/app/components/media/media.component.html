@@ -11,13 +11,13 @@
 <div class="button-container">
   <div class="media-buttons">
     <div class="button-container">
-      <a  #video id = 0 class="toggle" (click)="toggleMode($event.target.id, $event.target)" >Vids</a>
+      <a #video  id = "0" class="toggle selected" (click)="toggleMode($event.target.id, $event.target)">Vids/Reel</a>
     </div>
     <div class="button-container hidden">
-      <a  #pics class="toggle" id = 1  class="toggle" (click)="toggleMode($event.target.id, $event.target)">Pics</a>
+      <a  #pics class="toggle main-button" id = 1  class="toggle main-button" (click)="toggleMode($event.target.id, $event.target.value)">Pics</a>
     </div>
     <div class="button-container">
-      <a  #heads class="toggle selected" id = 2  class="toggle" (click)="toggleMode($event.target.id, $event.target)">Pics</a>
+      <a  #heads value="pics" class="toggle selected" id = "2"  class="toggle main-button" (click)="toggleMode($event.target.id, $event.target)">Pics</a>
     </div>
 
   </div>
@@ -132,6 +132,6 @@
 <app-pics></app-pics>
 </div>
 <div *ngIf="mode === modes[2]">
- <app-headshots></app-headshots>
+<app-swiper></app-swiper>
 </div>
 </div>

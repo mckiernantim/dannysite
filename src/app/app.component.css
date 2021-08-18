@@ -1,5 +1,8 @@
 .entire-app{
-    padding:0 5%
+    padding:0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (min-width:764px) and (max-width:1024px){

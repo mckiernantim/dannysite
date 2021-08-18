@@ -18,9 +18,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(public ls:LayoutService ) {}
   title = 'DannyYoerges';
-  prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
-  }
+  // prepareRoute(outlet: RouterOutlet) {
+  //   return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  // }
   ngOnInit(): void {
     let check = this.ls.isBreakpointActive
     this.ls.subscribeToLayoutChanges().subscribe(observerResponse => {

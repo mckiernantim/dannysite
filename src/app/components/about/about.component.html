@@ -5,43 +5,44 @@
   titleText:"About", 
   color:"#f6b74e", 
   xOffset:"0%", 
-  yOffset:"0%"
+  yOffset:"0%",
+  height:"35vh"
 
 }'></app-header-image>
   <section class="section-body">
-    <div class="about-body">
-      <div class='text-box flex row gird-one'>
-        <h2>
-         {{text[0]}}
-        </h2>
+    <div class="three-one-grid grid">
+      <div class="horse-image-mobile">
+        <div class="flex row">
+          <img  class="horse-image-mobile" src="../../../assets/images/ComicDesktop.jpg">
+         </div>
+      </div>  
+      <div class="about-body">
+        <div class='text-box flex row gird-one'>
+          <h3>
+            {{text[0]}}
+            {{text[1]}}
+          </h3>
+        </div>
+        <div class="flex row grid-four text-box">
+          <ul>
+            <li *ngFor="let item of list">{{item}}</li>
+          </ul>
+        </div>
+        <div class='text-box flex row grid-five text-box'>
+          <h3>
+            {{text[2]}} contact me <a href="mailto:dannyYoerges@gmail.com">here</a>
+          </h3>
+        </div>
       </div>
-      <div class="flex row grid-two ">
-       <h3>
-        {{text[1]}}
-      </h3> 
-      </div>
-      <div class="flex row grid-three">
-        
-      </div>
-      <div class="flex row grid-four ">
-        <ul>
-          <li *ngFor="let item of list">{{item}}</li>
-        </ul>
-      </div>
-      <div class='text-box flex row grid-five'>
-        <h3>
-         {{text[2]}} contact me <a mailto="dannyYoerges@gmail.com">here</a>
-        </h3>
+      <div class="about-image">
+        <div class="flex row">
+          <img class="horse-image" src="../../../assets/images/ComicDesktop.jpg">
+        </div>
       </div>
     </div>
     <div class="flex row video-container">
-      <iframe width="560" 
-    height="315" src="https://www.youtube.com/embed/hyZKzFJSdE0" 
-    title="YouTube video player" frameborder="0"
-     allow="accelerometer; autoplay; 
+      <iframe src="https://www.youtube.com/embed/hyZKzFJSdE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; 
-     gyroscope; picture-in-picture" 
-     allowfullscreen></iframe>
+     gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
-        

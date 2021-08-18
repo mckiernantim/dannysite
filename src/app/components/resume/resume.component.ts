@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-const url:string = "../../assets/images/Website/Resume_CV/buttonImages/"
+const url:string = "../../assets/images/"
 
 @Component({
   selector: 'app-resume',
@@ -11,12 +11,13 @@ const url:string = "../../assets/images/Website/Resume_CV/buttonImages/"
 
 export class ResumeComponent implements OnInit {
   images:any = { 
-    cvDesktop:`${url}cvDesktop.jpg`,
+    cvDesktop:`${url}cvImage.png`,
     cvMobile:`${url}cvMobile.jpg`,
     headshotsDesktop:`${url}headshotsDesktop.jpg`,
     headshotsMobile:`${url}headshotsMobile.jpg`,
-    resumeDesktop:`${url}resumeDesktop.jpg`,
+    resumeDesktop:`${url}resumeImage.png`,
     resumeMobile:`${url}resumeMobile.jpg`
+    
   }
 
   constructor() { }

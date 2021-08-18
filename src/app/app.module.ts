@@ -16,11 +16,11 @@ import { PanelComponent } from './components/panel/panel.component';
 import { AboutComponent } from './components/about/about.component';
 import { MediaComponent } from './components/media/media.component';
 import { PicsComponent } from './components/pics/pics.component';
-
 import { ResumeComponent } from './components/resume/resume.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IvyGalleryModule } from 'angular-gallery';
+import { SwiperModule } from 'swiper/angular';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon'
@@ -29,6 +29,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { TeachingComponent } from './teaching/teaching.component';
 import { HeaderImageComponent } from './components/header-image/header-image.component';
 import { LandingDialogComponent } from './components/landing-dialog/landing-dialog.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { SwiperComponent } from './components/swiper/swiper.component';
+import { Browser } from 'protractor';
 
 
 @NgModule({
@@ -48,6 +51,9 @@ import { LandingDialogComponent } from './components/landing-dialog/landing-dial
     HeadshotsComponent,
     HeaderImageComponent,
     LandingDialogComponent,
+    ContactCardComponent,
+    SwiperComponent,
+    FooterComponent
    
   
   ],
@@ -56,13 +62,14 @@ import { LandingDialogComponent } from './components/landing-dialog/landing-dial
     AppRoutingModule,
     IvyGalleryModule,
     CommonModule,
-    BrowserAnimationsModule,
-    NoopAnimationsModule,
     MatMenuModule,
     RouterModule,
     MatToolbarModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    SwiperModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
 
   ],
   providers: [],

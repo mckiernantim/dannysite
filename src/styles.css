@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~swiper/swiper-bundle';
+
 @keyframes slideRight {
 	0% {
 		transform: translateX(0%)
@@ -18,6 +20,10 @@
 	}
 	
 }
+a{list-style-type: none;}
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 80%; }
 .carousel-cell img{
 	object-fit: contain !important;
 }
@@ -29,7 +35,9 @@
 		opacity: 1
     }
 }
-
+h1{
+	font-size:18px
+}
 a{
    color: black;
    font-weight:bold; 
@@ -64,6 +72,12 @@ li{
     
 
   }
+  .grow:hover{
+    transform: scale(1.03);
+  }
+  .delay4{
+    animation-delay: .4s !important;
+  }
   .delay8{
     animation-delay: .8s !important
   }
@@ -77,24 +91,23 @@ li{
     animation-delay: 1.4s !important
   }
   .fadeIn{
-    animation: fadeIn 1.0s 1  ease-in;
+    animation: fadeIn 1.0s 1  ease-in-out;
     animation-fill-mode: forwards;
     opacity:0.01
   }
+
+
   .fade6{
-    animation-duration: .8s !important 
+    animation-duration: .6s !important 
   }
   .fade8{
-    animation-duration: .6s !important;
+    animation-duration: .8s !important;
   }
   .grid{
     display:grid
   }
-  .construction{
-	  border:2px solid yellow;
-  }
   .underline{
-    border-bottom:1px solid;
+    border-bottom:2px solid;
   }
   .no-margin-bottom{
     margin-bottom:0;
@@ -122,33 +135,35 @@ html, body {
     border:3px dotted orange
 }
 .orange{
-    background: linear-gradient(to bottom, #f5a623 25%, #f0c275 98%);
+    background:  #f5a623 25%
 }
 .blue{
-    background:linear-gradient(to bottom, #4a90e2, #7fabde 99%);
+    background:#4a90e2
 }
 .green{
-    background: linear-gradient(to bottom, #7ed321, #a1ca74);
+    background:  #7ed321
+}
+.swiper-button-prev, .swiper-button-next {
+  padding:0 5% !important;
+  border:none
 }
 .purple{
-    background: linear-gradient(to bottom, #c84ce1 14%, #d587e4);
+    background: #c84ce1 
 }
 .width-50{
   width:50%
 }
 .main-button{
   margin: 0 auto;
-  width: auto;
-  height: 25%;
-  padding: 5% 5%;
-  border-radius: 100px;
-  background-color: green;
+  max-width:80%;
   display: flex;
   flex-direction: column;
   align-content: stretch;
   justify-content: space-around;
   text-align: center;
   border-bottom: 0px;
+  list-style-type: none;
+  cursor: pointer;
   
 
 }
@@ -170,15 +185,12 @@ box-shadow:none
 }
 .container{
     height:auto;
-
     align-content: center;
     width:auto;
     justify-items: center;
     display:grid;
     grid-template-columns: 1fr;
-    
-       
-    }
+  }
     .black{
       background-color:black;
     }
@@ -199,6 +211,9 @@ box-shadow:none
     }
     .one-column{
       grid-template-columns: 1fr;
+    }
+    .two-one-grid{
+      grid-template-columns:2fr 1fr
     }
     .two-column{
         grid-template-columns: 1fr 1fr;
@@ -223,8 +238,8 @@ box-shadow:none
     .mat-dialog-container {
       padding:2% !important;
       overflow:hidden !important;
-
     }
+	
     
     @media (max-width:1024px){
       .component-wrapper{
@@ -235,7 +250,21 @@ box-shadow:none
       .two-column{
         grid-template-columns: 1fr;
       }
-      p{
-        font-size: 15px;
+      .entire-app{
+        padding:0 9%
+      }
+     
+     
+    }
+    @media (max-width:450px){
+      .entire-app{
+        max-width:450px;
+        margin:0 auto;
+      }
+      .main-button{
+        width:110px
+      }
+      .underline{
+        border:0px ;
       }
     }

@@ -15,21 +15,21 @@ export class MediaComponent implements OnInit {
     "heads"
   ]
   mode:string
-  selected: HTMLElement 
+  selected: any
   ngOnInit(): void {
-    this.mode = this.modes[2];
-    console.log(this.selected)
-  //  this.toggleMode(2, document.getElementById('2'))
+    this.mode = this.modes[0];
+    this.selected = document.getElementById("0")
+    
   }
   toggleMode(num, target){
-    console.log(target)
-    if(this.selected){
+    console.log(num, target, this.selected)
+    if(this.selected != target){
       this.selected.classList.toggle("selected")
-
+      this.selected = target
+      this.selected.classList.toggle("selected")
+     
+      console.log(target, this.selected)
+      this.mode = this.modes[num]
     }
-    this.selected = target
-    target.classList.toggle("selected")
-    console.log(target, this.selected)
-    this.mode = this.modes[num]
   }
  }

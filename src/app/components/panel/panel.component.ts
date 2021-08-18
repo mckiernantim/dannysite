@@ -10,6 +10,7 @@ import { LandingDialogComponent } from '../landing-dialog/landing-dialog.compone
 })
 export class PanelComponent implements OnInit {
 @Input()path: string;
+@Input()height: string;
 @Input()label: string;
 @Input()color: string;
 @Input()offset:string;
@@ -19,10 +20,12 @@ export class PanelComponent implements OnInit {
 @Input()size:string
 @Input()xPos:string
 @Input()align:string
+@Input()margin:string;
+@Input()noMargin:string;
   constructor( public dialog:MatDialog) { }
   
   ngOnInit(): void {
-    console.log(this.link)
+    console.log(this.noMargin)
   }
   openDialog(link) {
     const dialogRef = this.dialog.open(LandingDialogComponent,{

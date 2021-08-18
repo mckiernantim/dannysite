@@ -1,13 +1,18 @@
-<div class="landing-wrapper" style="align-items:{{align}}">
-  <div class="panel-container" style="background-image:url({{ path }});
+<div class="landing-wrapper {{noMargin}}" style="align-items:{{align}}; margin-top:{{margin}} ">
+ 
+  <div class="panel-container border-{{color}}" 
+  style="background-image:url({{ path }});
   background-position-x:{{ xPos }};
   background-position-y:{{ offset }}; 
-  background-size:{{ size }}" id="panel{{ id }}">
-    <div class="overlay" style="background-color:{{ color }}  .3);border:15px solid {{ color }} .9);">
+  background-size:contain;
+  background-color:white;
+  background-repeat:no-repeat"
+  id="panel{{ id }}">
+
       <!-- color has an added opacity to deal with the overlay div. -->
-      <h1 class="label visible" style="background-color:{{ color }} .9)">
-        <a (click)="openDialog($event.target.id)" id={{label}}>{{ label }}</a>
+      <h1 class="label visible bg-{{color}}" >
+        <a class="panel-button" (click)="openDialog($event.target.id)" id={{label}}>{{ label }}</a>
       </h1>
-    </div>
+    
   </div>
 </div>

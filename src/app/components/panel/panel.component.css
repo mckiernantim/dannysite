@@ -1,9 +1,19 @@
+h1{
+  font-size: 18px;
+}
 .panel-container{
     
     height:92%;
     text-align: center;
     width:100%;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.panel-button{
+  cursor: pointer;
 }
 .landing-wrapper{
   display:flex;
@@ -28,24 +38,23 @@
 
 .panel-container .label:hover ,
 .panel-container .label:focus,
-.panel-container .overlay:hover  {
-  transform: scale(1.02);
+.panel-container  {
+  transform: scale(1.01);
 }
 
 
 
 .overlay{
-    height:93%;
-    width: 97%;
+    height:94%;
+    width: 96%;
 }
-.overlay :hover{
-    opacity:0.45 !important;
-   
-    background-color:blue;
-}   
+
+.panel-button :hover{
+  transform: scale(1.03);
+}
 
 a{
-  font-size:.8em;
+ 
   border:none;
 }
 .label{
@@ -53,7 +62,16 @@ a{
   margin-left:28%;
   margin-right:28%
 }
-@media (min-width:767px) and  (max-width:1024px){
+@media (min-width:761px) and  (max-width:1024px){
+  main{
+    margin-top:10%
+  }
+    .noMargin{
+      margin:0 !important;
+    }
+    #panel2{
+      width:100%
+    }
     .two-column{
         grid-template-columns: 1fr;
         width:100%
@@ -61,10 +79,10 @@ a{
    
     .panel-container{
       display: flex;
-      height: 30vh;
+      height: 20vh;
     }
     .label{
-      margin-bottom: 25%;
+      margin-bottom: 40%;
       margin-left: 32%;
       margin-right: 32%;
       margin-top: 38%;
@@ -82,28 +100,125 @@ a{
     #panel4{
       background-position-x: 50%;
     }
+    .border-purple{
+      background-position-x: 0% !important;
+    }
 }
+  .border-blue{
+    margin-bottom:2%;
+    background-position-x: 101%;
+    border:20px solid rgba(74, 144, 226, 1);
+    border-left:15px solid rgba(74, 144, 226, 1);
+    background-color: rgba(74, 144, 226, 0.3);
+  }
+  .border-orange{
+    margin-bottom:2%;
+    border:20px solid rgba(245, 166, 35, 1);
+    background-color: rgba(245, 166, 35, 0.3);
+  }
+  .border-green{
+    background-position-x:45%;
+    border:20px solid rgba(126, 211, 33, 1);
+    background-color: rgba(126, 211, 33, 0.3);
+    border-top: 15px solid rgba(126, 211, 33, 1);
+   
+  }
+  .border-purple{
+    border:20px solid rgba(200, 76, 225, 1);
+    border-left:15px solid rgba(200, 76, 225, 1);
+    border-top:15px solid rgba(200, 76, 225, 1);
+
+    background-color: rgba(200, 76, 225, 0.3);
+  }
+  .bg-blue{
+    background-color:rgba(74, 144, 226, 1)
+   
+  }
+  .bg-orange{
+    background-color:rgba(245, 166, 35, 1);
+  }
+  .bg-green{
+    background-color:rgba(126, 211, 33, 1);
   
-@media only screen and (max-width:420px){
+  }
+  .bg-purple{
+    background-color:rgba(200, 76, 225, 1)
+  }
+  
+@media only screen and (max-width:761px){
+  #player{
+    max-width: calc(277.778vh) !important;
+    height: calc(106.25vw)!important
+  }
+  .noMargin{
+    margin:0px !important;
+  }
+  .overlay{
+    max-width: 86%;
+  }
     .two-column{
         grid-template-columns: 1fr;
         width:100%
     }
     
+    .panel-container{
+      background-size: cover !important;
+      height: 250px;
+    }
     a{
       font-size:.8em;
       border:none;
     }
-    .panel-container{
-      display:flex;
-      height: 97%;
-    }
+  
     .label{
       margin-bottom:25%;
       margin-left:28%;
       margin-right:28%
     }
+    .big-border{
+      border:25px;
+    }
+    .overlay{
+      
+      height:90%
+    }
+    .border-blue{
+      margin-bottom:0px;
+      background-position-x: 55%;
+      border:26px solid rgba(74, 144, 226, 1);
+      background-color: rgba(74, 144, 226, 0.3);
+    }
+    .border-orange{
+      margin-bottom:0px;
+      border:26px solid rgba(245, 166, 35, 1);
+      background-color: rgba(245, 166, 35, 0.3);
+    }
+    .border-green{
+      border:25px solid rgba(126, 211, 33, 1);;
+      background-color: rgba(126, 211, 33, 0.3);
+      
+    }
+    .border-purple{
+      border:25px solid rgba(200, 76, 225, 1);
+      background-color: rgba(200, 76, 225, 0.3);
+    }
   
 }
+@media(min-width: 761px) and (max-width:1000px){
+  .overlay{
+    max-width:90%;
+    height:90%
+  }
+  .panel-container{
+    width:98%
+  }
+  .border-blue{
+    margin-bottom:0px
+  }
+  .border-orange{
+    margin-bottom:0px
+  }
+}
+
 
 

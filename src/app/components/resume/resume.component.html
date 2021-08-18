@@ -3,105 +3,48 @@
     <app-header-image [styleObj]='{titleText:"Resume"}'></app-header-image>
     <section class="section-body">
       <div class=" grid three-column">
-        <div class="flex top-40 contact-card">
-          <div class="card-body flex column">
-            <div class="pic-container card-grid-cell row">
-              <div>
-                <img class="download-pic" src='{{images.resumeDesktop}}'>
-                <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
-                </a>
-              </div>
-            </div>
-            <div class="block card-content flex center row">
-              <div class="center card-grid-cell row">
-                <div class="main-button blue">
-                  <a>Resume</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex top-40 contact-card">
-          <div class="card-body flex column">
-            <div class="pic-container card-grid-cell row">
-              <div>
-                <img class="download-pic" src='{{images.cvDesktop}}'>
-                <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
-                </a>
-              </div>
-            </div>
-
-            <div class="block card-content flex center row">
-              <div class="center card-grid-cell">
-                <div class="main-button blue">
-                  <a>CV</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex top-40 contact-card">
-          <div class="card-body flex column">
-            <div>
-              <img class="download-pic" src='{{images.headshotsDesktop}}'>
-              <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
+    <div class="contact-ls
+    card flex row">
+      <div>
+        <div class="download-container">
+          <img class="download-pic" src = "{{images.resumeDesktop}}">
+          <div>
+            <a class= "main-button grow" href="../../../assets/resume.pdf" download>
+           <img src="../../../assets/Buttons/Download Resume Button.png">
               </a>
-            </div>
-
-            <div class="block card-content flex center row">
-              <div class="center card-grid-cell">
-                <div class="main-button blue">
-                  <a>Headshots</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
+      </div>
+    </div>
+  <div class="contact-card flex row" >
+      <div>
+        <div class="download-container">
+          <img class="download-pic" src = "{{images.cvDesktop}}">
+          <div>
+            <a class= "main-button grow" href="../../../assets/Yoerges CV - February 2021.pdf" download>
+              <img src="../../../assets/Buttons/Download CV Button.png">
+                 </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-card flex row">
+      <div>
+        <div class="download-container">
+          <img class="download-pic" style="width:195px"   src = "{{images.headshotsDesktop}}">
+          <div>
+            <a class= "main-button grow" href="../../../assets/images/headshotsDesktop.jpg" download>
+              <img src="../../../assets/Buttons/Download Headshots Button.png">
+                 </a>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
       <div class="black-background">
-        <div class="grid  two-column height-5s0">
-          <div class="top-40 contact-card purple">
-            <div class="card-body flex column">
-              <div class="card-header">
-                <h2 class="italic border-bottom">For all other inquiries you can email me with this magic button</h2>
-              </div>
-              <div class="block card-content center row">
-                <div class="center card-grid-cell">
-                  <div class="main-button purple">
-                    <a>email me</a>
-                  </div>
-                </div>
-                <div class="pic-container warhorse lb-background  card-grid-cell">
-                  <div style="background-image:url('{{images.resumeDesktop}}');">
-                    <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
-                    </a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="top-40 contact-card green">
-            <div class="card-body flex column">
-              <div class="card-header">
-                <h2 class="italic border-bottom">For all professional bookings contact Mark at LB Talent </h2>
-                <br>
-              </div>
-              <div class="block card-content center row">
-                <div class="center card-grid-cell">
-                  <div class="main-button green">
-                    <a>email Mark</a>
-                  </div>
-                </div>
-                <div class="pic-container lb-background  card-grid-cell">
-                  <div style="background-image:url('{{images.resumeDesktop}}');">
-                    <a href="https://www.facebook.com/LBTalent/" style="height:100px;width:100px">
-                    </a></div>
-                  <br>
-                </div>
-              </div>
-            </div>
-          </div>
-
+    <app-contact-card columns="two-column" styles  ='width:400px; height:350px; margin-top:0'></app-contact-card>
         </div>
-      </div>
+      </section>
 
-    </section>
+
+

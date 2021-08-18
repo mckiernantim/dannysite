@@ -37,6 +37,10 @@
     box-shadow: none;
     border: none;
 }
+.contact-button{
+    max-width:100px;
+    cursor: pointer;
+}
 
 @media (max-width:767px){
   
@@ -45,9 +49,7 @@
         display:none;
     }
     .mobile-menu{
-        background: linear-gradient(
-            90deg
-            , rgba(11,95,186,1) 0%, rgba(81,151,226,1) 100%);
+        background: white;
        width:100%    
     }
     .menu-list{
@@ -73,5 +75,10 @@
 @media (min-width:768px){
     .mat-toolbar{
         display:none;
+    }
+}
+@media (max-width:761px){
+    .home-link {
+        padding-right:20px
     }
 }

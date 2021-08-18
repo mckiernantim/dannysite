@@ -19,7 +19,7 @@ export class LandingComponent implements OnInit {
     "../../assets/images/landing/Resume_ReelImage.png"
   ]
   size: string [] =
-  ["125%"]
+  ["90%"]
   xPos:string[] = [
     "55%"
   ]
@@ -34,10 +34,10 @@ export class LandingComponent implements OnInit {
   // opacity is established later in in the template of the panel
 
   colors: string[] = [
-    "rgba(245, 166, 35, ",
-    "rgba(74, 144, 226,",
-    "rgba(126, 211, 33,",
-    "rgba(200, 76, 225,"
+    "orange",
+    "blue",
+    "green",
+    "purple"
   ]
   offset: string[] = [
     "90%",
